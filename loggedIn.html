@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="HandheldFriendly" content="true" />
+</head>
+
+<body>
+    <h1>Logged in</h1>
+    <form action="/logout">
+        <input type="submit" value="Logout" onclick="onLogOutClick()">
+    </form>
+
+    <script>
+        function onLogOutClick() {
+            //delete cookie:
+            document.cookie = "userData=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+    </script>
+</body>
+
+</html>
